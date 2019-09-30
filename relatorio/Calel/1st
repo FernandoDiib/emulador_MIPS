@@ -1,1 +1,9 @@
+Calel Becassi
 
+Dia 1 - 29/09/2019: Comecei relendo o pdf da descrição do trabalho. Pesquisei bastante sobre como utilizar o MARS Mips simulator, depois de testar com um programa em assembly descobri como ele funcionava.
+Minha idéia inicial foi tentar descobrir como exatamente seria o arquivo de entrada do emulador, simulei os comandos para gerar um arquivo .bin através do MARS igual dizia na descrição do trabalho(7 Testando e corrigindo seu próprio trabalho), porém como não tinha o arquivo "bubble.s" que seria o algoritmo do bubble sort em Assembly, simulei com o arquivo Fibonacci.asm encontrado no site do MARS simulator que é o algoritmo de fibonacci em Assembly. Gerei um arquivo .bin que tinha exatamente o formato das instruções de entrada que vamos utilizar no emulador (blocos de números binários com 32 bits cada). Só que não consegui executar a instrução seguinte, que seria a saída gerada pelo MARS após dar como entrada as intruções geradas no passo anteriror, no prompt de comando aparece uns erros e não sei se tem algo a ver com eu estar utilizando Windows. Após muito tentar alterand o código que é pra ser digitado no terminal/prompt de comando desisti e fui pesquisar como funcionava o programa kdiff3 que vai ser utilizado para comparar as saídas e ver se o emulador funciona corretamente.
+
+Problemas encontrados: O primeiro problema foi que eu não estava conseguindo executar o passo-a-passo pra gerar as instruções em binário do programa Fibonacci.asm pois dava um erro no prompt de comando. Fiquei alterando a forma como estava digitando pra gerar as instruções pelo terminal e na descrição do trabalho pedia para digitar da seguinte forma: 
+java -jar ../Mars4_5.jar a dump .text BinaryText bubble_text.bin bubble.s
+Porém só consegui executar digitando com um '.' a menos no java -jar ../Mars~~~~ etc. ou seja digitando assim java -jar ./Mars~~~~etc. 
+Tentei fazer o mesmo com a instrução seguinte mas mesmo assim não consegui.
